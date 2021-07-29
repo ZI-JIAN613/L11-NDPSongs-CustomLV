@@ -29,8 +29,9 @@ public class Song implements Serializable {
         return id;
     }
 
-    public void setId(int id) {
+    public Song setId(int id) {
         this.id = id;
+        return this;
 
     }
 
@@ -38,8 +39,9 @@ public class Song implements Serializable {
         return title;
     }
 
-    public void setTitle(String title) {
+    public Song setTitle(String title) {
         this.title = title;
+        return this;
     }
 
     public String getSingers() {
@@ -47,24 +49,27 @@ public class Song implements Serializable {
     }
 
 
-    public void setSingers(String singers) {
+    public Song setSingers(String singers) {
         this.singers = singers;
+        return this;
     }
 
     public int getYearReleased() {
         return yearReleased;
     }
 
-    public void setYearReleased(int yearReleased) {
+    public Song setYearReleased(int yearReleased) {
         this.yearReleased = yearReleased;
+        return this;
     }
 
     public int getStars() {
         return stars;
     }
 
-    public void setStars(int stars) {
+    public Song setStars(int stars) {
         this.stars = stars;
+        return this;
     }
 
     @Override
